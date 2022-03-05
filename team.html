@@ -3,6 +3,11 @@
  <head>
      <title>Intellectual Discovery</title> 
      <link rel="stylesheet" href="style.css"/>
+     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
      <link rel = "icon" href = 
      "Images/biglogo.png" 
@@ -72,14 +77,14 @@
             </div> 
             <div class="card">
                 <div class="boxx">
-                    <img src="Images/prof7.jpg">
+                    <img src="prof7.jpg">
                     <div class="text">Kenneth Angelo De Vera </div>
                     <p></p>          
                 </div>           
             </div>  
              <div class="card">
                 <div class="boxx">
-                    <img src="Images/prof8.jpg">
+                    <img src="prof8.jpg">
                     <div class="text">John Meynard Infantado</div>
                     <p></p>          
                 </div>           
@@ -172,11 +177,28 @@
         </div>
     </div>
 </section>
- <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-     <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="script.js"></script>
+
+<script>
+    $('.carousel').owlCarousel({
+        margin: 20,
+        loop: true,
+        autoplayTimeOut: 2000,
+        autoplayHoverpause: true,
+        responsive: {
+            0:{
+                items: 1,
+                nav: false
+            },
+            600:{
+                items: 2,
+                nav: false
+            },
+            1000:{
+                items: 3,
+                nav: false
+            }
+        }
+    })
+</script>
  </body>
 </html>
